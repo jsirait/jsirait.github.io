@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Crimson+Text&family=Playfair+Display&family=Source+Sans+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+:root {
+    --alegreya: "Alegreya Sans SC", sans-serif;
+    --crimson: "Crimson Text", serif;
+    --playfair: "Playfair Display", serif;
+    --sanspro: "Source Sans Pro", sans-serif;
+    --forest: #00990033;
+    --prettygrey: rgba(235, 235, 235, 0.76);
+}
+
+
+html, body {
+    height: 100%;
+}
+
+.very-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

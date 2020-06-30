@@ -1,0 +1,73 @@
+@media only screen and (max-width:768px){
+    header .navbar .navbar-brand{
+        padding-right: 1rem;
+    }
+
+    header .nav-item {
+        padding-left: 1rem;
+    }
+
+    header .nav-item:first-child{
+        padding-left: 1rem;
+    }
+
+    .section-1 .row .col-md-6 .panel {
+        position: initial;
+        width: initial;
+        height: initial;
+        font-size: 1.2em;
+    }
+
+    .section-1 .row .col-md-6 .photo-profile img {
+        opacity: 1;
+        width: 87%;
+        border-radius: 0.2em;
+        padding-top: 6vmin;
+    }
+
+    .wit-images .row .col-md-4 {
+        padding-bottom: 3vmin;
+        justify-content: center;
+    }
+
+    .tm-images .row .col-md-6 img {
+        width: 93%;
+    }
+
+    .my-interest .row .col-md-6 .junita-archery img {
+        height: 26rem;
+        width: 18rem;
+        opacity: 1;
+        border-radius: 0.2em;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        padding-top: 5vmin;
+    }
+
+    .my-carousel .carousel .carousel-inner .carousel-item img {
+        border-radius: 0.2em;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:425px){
+
+    header .navbar .navbar-brand{
+        padding-right: 1rem;
+        font-size: 1.7em;
+    }    
+
+    .wit-images .row .col-md-4 {
+        padding-bottom: 3vmin;
+        width: 33%;
+        justify-content: center;
+    }
+
+    .tm-images .row .col-md-6 {
+        padding-bottom: 3vmin;
+        width: 50%;
+        justify-content: center;
+    }
+
+}
