@@ -139,8 +139,11 @@ header .dropdown-menu .dropdown-item {
 }
 
 .ea-images .row .col-md-6 img {
-    width: 83%;
+    width: 86%;
     padding-bottom: 3vmin;
+    border-radius: 0.2em;
+    border: 2px solid rgb(0, 74, 158);
+    padding-top: 1vmin;
 }
 
 hr {
