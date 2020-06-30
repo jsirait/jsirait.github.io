@@ -138,6 +138,11 @@ header .dropdown-menu .dropdown-item {
     padding-bottom: 3vmin;
 }
 
+.ea-images .row .col-md-6 img {
+    width: 50%;
+    padding-bottom: 3vmin;
+}
+
 hr {
     width: 50%;
     align-content: center;
