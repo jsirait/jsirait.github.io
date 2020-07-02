@@ -119,7 +119,8 @@ header .dropdown-menu .dropdown-item {
     padding: 3vmin 0 5vmin 0;
 }
 
-.section-2 .row .col-md-12 p {
+.section-2 .row .col-md-12 p,
+.section-2 .row .col-md-12 li {
     font-family: var(--crimson);
     font-size: 1.2em;
 }
