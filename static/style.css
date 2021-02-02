@@ -136,11 +136,10 @@ header .dropdown-menu .dropdown-item {
 }
 
 .afa-images .row .col-md-8 img {
-    width: 86%;
+    width: 95%;
     opacity: 1;
     border-radius: 0.2em;
     border: 2px solid rgb(0, 74, 158);
-    padding-bottom: 3vmin;
 }
 
 .afa-images .row .col-md-4 img {
@@ -148,7 +147,6 @@ header .dropdown-menu .dropdown-item {
     opacity: 1;
     border-radius: 0.2em;
     border: 2px solid rgb(0, 74, 158);
-    padding-bottom: 3vmin;
 }
 
 .wit-images .row .col-md-4 img {
@@ -156,7 +154,6 @@ header .dropdown-menu .dropdown-item {
     opacity: 1;
     border-radius: 0.2em;
     border: 2px solid rgb(0, 74, 158);
-    padding-bottom: 3vmin;
 }
 
 .ea-images .row .col-md-6 img {
