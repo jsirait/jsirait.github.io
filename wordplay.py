@@ -3,19 +3,20 @@ import difflib
 import random
 from thefuzz import process, fuzz
 
-def generateSimilarWord(word1, word2, freq, cutoff=0.6):
-    for _ in range(1):
-        # find similar word in the English language
-        # new_word1 = random.choice(difflib.get_close_matches(word1, words, n=5, cutoff=cutoff)[1:])
-        # new_word2 = random.choice(difflib.get_close_matches(word2, words, n=5, cutoff=cutoff)[1:])
-        new_word1 = process.extract(word1, words, limit=2, scorer=fuzz.token_sort_ratio)
-        new_word2 = process.extract(word2, words, limit=2, scorer=fuzz.token_sort_ratio)
-        print("{} {}".format(new_word1, new_word2))
-        word1 = new_word1
-        word2 = new_word2
+def generateSimilarWordsLevensteihn(word, cutoff=0.6):
+    '''Prints words that are similar to the input word, where similar words 
+    are defined as words that have minimum Levensteihn distance'''
+    new_word1 = random.choice(difflib.get_close_matches(word, words, n=5, cutoff=cutoff)[1:])
+    # new_word1 = process.extract(word, words, limit=2, scorer=fuzz.token_set_ratio)[1][0]
+    return(new_word1)
 
 
 if __name__ == "__main__":
-    # theword = input("word: ").split()
-    # theword = "software engineer".split()
-    generateSimilarWord("software", "engineer", 10)
+    # word1, word2 = input("word: ").split()
+    freq = 10
+    word1 = "software"
+    word2 = "developer"
+    for _ in range(freq):
+        print("{} {}".format(word1, word2))
+        word1 = generateSimilarWordsLevensteihn(word1)
+        word2 = generateSimilarWordsLevensteihn(word2)
