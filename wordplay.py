@@ -25,18 +25,45 @@ def generateSimilarWordsLCSubstr(word):
 
 def calculateLCSq(word1, word2):
     '''Returns the total length of the longest common subsequence between the two input words'''
-    return 0
+    memo = [[0 for _ in range(len(word1))] for _ in range(len(word2))]
+    lcsq_score = 0
+    for ii in range(len(word2)):
+        for jj in range(len(word1)):
+            if (ii==0 or jj==0):
+                memo[ii][jj] = 1 if word1[jj] == word2[ii] else 0
+            elif (word1[jj] == word2[ii]):
+                memo[ii][jj] = memo[ii-1][jj-1] + 1
+            else:
+                memo[ii][jj] = max(memo[ii-1][jj], memo[ii][jj-1])
+    lcsq_score = memo[-1][-1]
+    return lcsq_score
 
 def calculateLCSt(word1, word2):
     '''Returns the length of the longest common substring between the two input words'''
-    return 0
+    memo = [[0 for _ in range(len(word1))] for _ in range(len(word2))]
+    lcst_score = 0
+    for ii in range(len(word2)):
+        for jj in range(len(word1)):
+            if (ii==0 or jj==0):
+                memo[ii][jj] = 1 if word1[jj] == word2[ii] else 0
+            elif (word1[jj] == word2[ii]):
+                memo[ii][jj] = memo[ii-1][jj-1] + 1
+                lcst_score = max(lcst_score, memo[ii][jj])
+            else:
+                memo[ii][jj] = 0
+    return lcst_score
 
 if __name__ == "__main__":
     # word1, word2 = input("word: ").split()
-    freq = 10
-    word1 = "software"
-    word2 = "developer"
-    for _ in range(freq):
-        print("{} {}".format(word1, word2))
-        word1 = generateSimilarWordsDifflib(word1)
-        word2 = generateSimilarWordsDifflib(word2)
+    # freq = 10
+    # word1 = "software"
+    # word2 = "developer"
+    # for _ in range(freq):
+    #     print("{} {}".format(word1, word2))
+    #     word1 = generateSimilarWordsDifflib(word1)
+    #     word2 = generateSimilarWordsDifflib(word2)
+    print(calculateLCSq("softly", "softwarely"))
+    print(calculateLCSt("softly", "softwarely"))
+
+# next steps:
+# * filter the english words so that it will only contain words within max 2 shorter or longer than input word
