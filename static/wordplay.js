@@ -10,12 +10,13 @@ $(document).ready(function() {
         
     function loop1 ( delay ) {
         $.each( items1, function ( i, elm ){
-            $text.delay( delay*1.5E3).fadeOut();
+            $text.delay( delay*1E3).fadeOut();
             $text.queue(function(){
                     $text.html( items1[i] );
                     $text.dequeue();
                 });
             $text.fadeIn();
+            $text.delay( delay*1.5E3);
             $text.queue(function(){
                 if ( i == items1.length -1 ) {
                     loop1(delay);   
@@ -33,6 +34,7 @@ $(document).ready(function() {
                 $text2.dequeue();
             });
             $text2.fadeIn();
+            $text2.delay( delay*1.5E3);
             $text2.queue(function(){
                 if ( i == items2.length -1 ) {
                     loop2(delay);   
