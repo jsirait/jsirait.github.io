@@ -12,7 +12,7 @@ def generateSimilarWordsDifflib(word, cutoff=0.6):
     return(new_word)
 
 
-def generateSimilarWordsLCSubseq(target, words, howmany=10):
+def generateSimilarWordsLCSubseq(target, words, howmany=20):
     '''Returns some number of words that are similar to the input word from the supplied list of words, 
     where similar words are defined as words that have the longest common subsequence, most similar first'''
     lcsq_dict = dict()
@@ -22,7 +22,7 @@ def generateSimilarWordsLCSubseq(target, words, howmany=10):
     similar_words = sorted(lcsq_dict.keys(), key=lambda w:lcsq_dict[w], reverse=True)
     return(similar_words[:howmany])
 
-def generateSimilarWordsLCSubstr(target, words, howmany=10):
+def generateSimilarWordsLCSubstr(target, words, howmany=20):
     '''Returns some number of words that are similar to the input word from the supplied list of words, 
     where similar words are defined as words that have the longest common substring, most similar first'''
     similar_words = []
@@ -76,12 +76,12 @@ if __name__ == "__main__":
     print(word1)
     print("LCSubstring based", generateSimilarWordsLCSubstr(word1, words))
     print("LCSubsequence based", generateSimilarWordsLCSubseq(word1, words))
-    # LCSubstring is the best metric to use
+    # LCSubstring is the best metric to use for 'software'
     # find words that are most similar to software
     print(word2)
     print("LCSubstring based", generateSimilarWordsLCSubstr(word2, words))
     print("LCSubsequence based", generateSimilarWordsLCSubseq(word2, words))
-    # LCSubstring is the best metric to use
+    # LCSubsequence is the best metric to use for 'developer'
     print("***** Code works successfully yay *****")
 
 # next steps:

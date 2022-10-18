@@ -68,6 +68,12 @@ header .dropdown-menu .dropdown-item {
 
 /* Section 1 */
 
+#wordplaydiv {
+    padding-bottom: 1vmin;
+    font-family: var(--alegreya);
+    color: #3D4A3D;
+}
+
 .section-1 {
     padding: 20vmin 0vmin 10vmin 0vmin;
 }
