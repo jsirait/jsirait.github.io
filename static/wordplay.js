@@ -16,7 +16,7 @@ $(document).ready(function() {
                     $text.dequeue();
                 });
             $text.fadeIn();
-            $text.delay( delay*1.5E3);
+            $text.delay( delay*1E3);
             $text.queue(function(){
                 if ( i == items1.length -1 ) {
                     loop1(delay);   
@@ -34,7 +34,7 @@ $(document).ready(function() {
                 $text2.dequeue();
             });
             $text2.fadeIn();
-            $text2.delay( delay*1.5E3);
+            $text2.delay( delay*1E3);
             $text2.queue(function(){
                 if ( i == items2.length -1 ) {
                     loop2(delay);   
