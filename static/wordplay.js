@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
-    var items1 = ["softwood", "softball", "software", "aware", "earthware", "forward"],
+    var items1 = ["softer", "stoneware", "software", "solitaire", "sportswear"],
         $text = $( '#wordplay1' ),
         delay = 2.5; //seconds
 
-    var items2 = ["enveloper", "teleprompter", "thunderflower", "developer", "helicopter"],
+    var items2 = ["enveloper", "teleprompter", "developer", "thunderflower", "helicopter"],
         $text2 = $( '#wordplay2' );
     
         

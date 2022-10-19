@@ -12,7 +12,7 @@ def generateSimilarWordsDifflib(word, cutoff=0.6):
     return(new_word)
 
 
-def generateSimilarWordsLCSubseq(target, words, howmany=20):
+def generateSimilarWordsLCSubseq(target, words, howmany=30):
     '''Returns some number of words that are similar to the input word from the supplied list of words, 
     where similar words are defined as words that have the longest common subsequence, most similar first'''
     lcsq_dict = dict()
@@ -22,7 +22,7 @@ def generateSimilarWordsLCSubseq(target, words, howmany=20):
     similar_words = sorted(lcsq_dict.keys(), key=lambda w:lcsq_dict[w], reverse=True)
     return(similar_words[:howmany])
 
-def generateSimilarWordsLCSubstr(target, words, howmany=20):
+def generateSimilarWordsLCSubstr(target, words, howmany=30):
     '''Returns some number of words that are similar to the input word from the supplied list of words, 
     where similar words are defined as words that have the longest common substring, most similar first'''
     similar_words = []
