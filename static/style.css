@@ -72,7 +72,13 @@ header .dropdown-menu .dropdown-item {
     padding-bottom: 1vmin;
     font-family: var(--alegreya);
     color: #3D4A3D;
-}
+} 
+
+.question-mark {
+    font-size: 20px; /* Adjust the size as needed */
+    color: #007bff; /* Change the color to your preference */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+  }
 
 .section-1 {
     padding: 20vmin 0vmin 10vmin 0vmin;
