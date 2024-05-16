@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     var items1 = ["softer", "stoneware", "software", "solitaire", "sportswear"],
         $text = $( '#wordplay1' ),
-        delay = 2.5; //seconds
+        delay = 2; //seconds
 
     var items2 = ["enveloper", "teleprompter", "developer", "thunderflower", "helicopter"],
         $text2 = $( '#wordplay2' );
