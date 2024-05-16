@@ -10,6 +10,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+        <script src="static/wordplay.js"></script>
         
       </head>
     
@@ -25,26 +27,27 @@
                     </p>
                     <p>
                         <a href="https://en.wikipedia.org/wiki/Horas">Horas!</a> I am a 
-                         <a>"<span id="wordplay1" title="A 'telephone game' of my title Software Developer (inspired by my former professor Ben Wood's website)">software</span> <span id="wordplay2" title="A 'telephone game' of my title Software Developer (inspired by my former professor Ben Wood's website)">developer</span>"</a>
+                         <a href="#explanation" title="A 'telephone game' of my title Software Developer (inspired by my former professor Ben Wood's website)"><span id="wordplay1">software</span> <span id="wordplay2">developer</span></a> 
+                         <sup id="superscript"><a href="#explanation" style="text-decoration: none; font-size: 0.8em;">[1]</a></sup> :)
                     </p>
-                    <p>Currently, I'm a Computer Science M.Eng. student at Princeton University, graduating in May 2025. 
+                    <p>Currently, I'm a Computer Science M.Eng. student at <a href="https://www.cs.princeton.edu/grad/masters-degree" target="_blank">Princeton University</a>, graduating in May 2025. 
                     </p>
                     <p>
-                        Prior to pursuing my M.Eng. degree, I have worked as a full-time software engineer at Deutsche Bank, New York. 
-                        Before that, I did my undergraduate at Wellesley College majoring in Computer Science, 
-                        where I also did software engineering internship and undergraduate research. 
+                        Prior to pursuing my M.Eng. degree, I have worked as a full-time software engineer at <a href="https://www.db.com/" target="_blank">Deutsche Bank</a>, New York. 
+                        During my undergraduate studies at <a href="https://www.wellesley.edu/" target="_blank">Wellesley College</a> majoring in Computer Science, 
+                        I also participated in software engineering internship and undergraduate research. 
                     </p>
                     <p>
                         I'm mainly interested in software engineering, data science, and machine learning -- especially privacy and fairness in machine learning. 
                     </p>
                     <p style="text-align:center">
                       <a href="mailto:jsirait@princeton.edu" target="_blank">Email</a> &nbsp;/&nbsp;
-                      <a href="mailto:jonbarron@gmail.com" target="_blank">LinkedIn</a> &nbsp;/&nbsp;
-                      <a href="https://github.com/jsirait/" target="_blank">Github</a>
+                      <a href="https://www.linkedin.com/in/jsirait/" target="_blank">LinkedIn</a> &nbsp;/&nbsp;
+                      <a href="https://github.com/jsirait/" target="_blank">GitHub</a>
                     </p>
                   </td>
                   <td style="padding:2.5%;width:40%;max-width:40%">
-                    <a href="images/JunitaSirait.jpg"><img style="width:80%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/JunitaSirait.jpg" class="hoverZoomLink"></a>
+                    <a href="images/JunitaSirait.jpg"><img style="width:80%;max-width:100%;object-fit: cover; border-radius: 20%;" alt="profile photo" src="images/JunitaSirait.jpg" class="hoverZoomLink"></a>
                   </td>
                 </tr>
               </tbody></table>
@@ -53,11 +56,9 @@
                   <td style="padding:20px;width:100%;vertical-align:middle">
                     <h2>Projects</h2>
                     <p>
-                      [Adding to the list as of 05/2024]
-                    </p>
-                    <p>
                       Some projects that I have worked on, both for school and personal interests. 
                     </p>
+                    <span>[List in progress as of 05/2024]</span>
                   </td>
                 </tr>
               </tbody></table>
@@ -66,50 +67,23 @@
     
     
     
-        <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+        <tr>
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
-              <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
-              <source src="images/smerf.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video></div>
-              <img src='images/smerf.jpg' width=100%>
+              <img src='images/newssources.png' width=100%>
             </div>
-            <script type="text/javascript">
-              function smerf_start() {
-                document.getElementById('smerf_image').style.opacity = "1";
-              }
-    
-              function smerf_stop() {
-                document.getElementById('smerf_image').style.opacity = "0";
-              }
-              smerf_stop()
-            </script>
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <a href="https://smerf-3d.github.io/">
-              <span class="papertitle">SMERF: Streamable Memory Efficient Radiance Fields for Real-Time Large-Scene Exploration</span>
-            </a>
+            <!-- <a href="https://github.com/jsirait/reddit-cos"> -->
+              <span class="papertitle">Audience-based news source characterization using probabilistic matrix factorization</span>
+            <!-- </a> -->
+            <a href="https://github.com/jsirait/reddit-cos">GitHub repo</a>
             <br>
-            <a href="http://www.stronglyconvex.com/about.html">Daniel Duckworth*</a>,
-            <a href="https://phogzone.com/">Peter Hedman*</a>,
-            <a href="https://creiser.github.io/">Christian Reiser</a>,
-            <a href="">Peter Zhizhin</a>,
-            <a href="">Jean-François Thibert</a>,
-            <a href="https://lucic.ai/">Mario Lučić</a>,
-            <a href="https://szeliski.org/">Richard Szeliski</a>,
-            <strong>Jonathan T. Barron</strong>
-            <br>
-            <em>arXiv</em>, 2023
-            <br>
-            <a href="https://smerf-3d.github.io/">project page</a>
-            /
-            <a href="https://www.youtube.com/watch?v=zhO8iUBpnCc">video</a>
-            /
-            <a href="https://arxiv.org/abs/2312.07541">arXiv</a>
-            <p></p>
             <p>
-            Distilling a Zip-NeRF into a tiled set of MERFs lets you fly through radiance fields on laptops and smartphones at 60 FPS.
+            I built an interaction data from the share counts of news articles in various subreddits (communities within 
+            Reddit), then used PMF algorithms with different priors and approximation techniques to extract latent feature 
+            vectors of news sources. I then explored the utility of these latent features in characterizing news sources and identifying 
+            similar news sources. This is an extension of <a href="https://repository.wellesley.edu/object/ir1768">my undergraduate thesis</a>. 
             </p>
           </td>
         </tr>
@@ -119,58 +93,59 @@
             <tr>
               <td>
                 <h2>Miscellanea</h2>
+                <p>[List in progress as of 05/2024]</p>
               </td>
             </tr>
           </tbody></table>
           <table width="100%" align="center" border="0" cellpadding="20"><tbody>
             
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-              <td width="75%" valign="center">
-                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
-                <br>
-                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
-                <br>
-                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-                <br>
-                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
-                <br>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/cs188.jpg" alt="cs188">
-              </td>
-              <td width="75%" valign="center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr>
-            
-
-            <tr>
               <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                <h2>Basically <br> Blog Posts</h2>
+                <h3>Teaching <br> Assistanships</h3>
               </td>
               <td width="75%" valign="middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
+                <span>At Princeton University: </span>
                 <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
+                <a href="https://csml.princeton.edu/undergraduate/sml-201-introduction-data-science">SML201 Introduction to data science</a>
+                <br><br>
+                <span>At Wellesley College: </span>
                 <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
+                <a href="https://catalog.wellesley.edu/course.php?pos=62&doc_type=CS+315">CS315 Data science for the web</a>
                 <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
+                <a href="https://catalog.wellesley.edu/course.php?pos=62&doc_type=CS+304">CS304 Databases with web interfaces</a>
+                <br>
+                <a href="https://catalog.wellesley.edu/course.php?pos=62&doc_type=CS+235">CS235 Theory of computation</a>
+                <br>
+                <a href="https://catalog.wellesley.edu/course.php?pos=62&doc_type=MATH+225">MATH225 Combinatorics and graph theory</a>
+                <br>
+                <a href="https://catalog.wellesley.edu/course.php?pos=62&doc_type=MATH+205">MATH205 Multivariable calculus</a>
               </td>
             </tr>
-            
-            
           </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-left:auto;margin-right:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:left;font-size:small;">
+                  
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p id="explanation" style="text-align:left;font-size:11px;">
+                  <sup id="superscript" style="text-decoration: none; font-size: 0.8em;">[1]</sup> 
+                  A 'telephone game' of my title Software Developer (inspired by my former professor Ben Wood's old website)
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
@@ -181,12 +156,10 @@
               </td>
             </tr>
           </tbody></table>
+
         </td>
       </tr>
     </table>
   </body>
 
-  <footer>
-    <script src="static/wordplay.js"></script>
-  </footer>
 </html>
